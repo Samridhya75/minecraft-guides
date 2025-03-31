@@ -8,14 +8,16 @@ import './App.css';
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="app">
-        <header className="bg-[#f5f5f5] p-10 border-b-2 border-[#e0e0e0]">
-          <div className="p-10 m-auto max-w-[1200px]">
-            <h1 className="m-0 text-2xl">Minecraft Guides</h1>
+      <div className="bg-[#1f2333]">
+        <header className="pb-12 bg-[#474e6a] rounded-b-lg drop-shadow-xl">
+          <div className="p-5 m-auto max-w-screen h-5">
             <nav>
-              <ul className='flex list-none p-0 m-[10px]'>
-                <li className='mr-5'><a href="/">Home</a></li>
-                <li className='mr-5'><a href="/about">About</a></li>
+              <ul className='flex list-none mt-[10px] text-white font-[Minecraft]'>
+                <li className="mr-5 text-3xl text-white"><a href="/">Nemesis Minecraft</a></li>
+                <li className='ml-10 mr-5 mt-2'><a href="/about" className='uppercase'>About</a></li>
+                <li className='mr-5 mt-2'><a href="/servers" className='uppercase'>Server</a></li>
+                <li className='mr-5 mt-2'><a href="/plugins" className='uppercase'>Plugins</a></li>
+                <li className='mr-5 mt-2'><a href="/mods" className='uppercase'>Mods</a></li>
               </ul>
             </nav>
           </div>
@@ -28,9 +30,9 @@ const App: React.FC = () => {
           </Routes>
         </main>
 
-        <footer className="bg-[#f5f5f5] p-5 border-t-2 border-black text-center">
+        <footer className="p-5 border-t border-[#e0e0e0] text-center">
           <div className="p-10 m-auto max-w-[1200px]">
-            <p>© {new Date().getFullYear()} My Markdown Blog</p>
+            <p>© {new Date().getFullYear()} Nemesis Minecraft</p>
           </div>
         </footer>
       </div>

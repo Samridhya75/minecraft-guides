@@ -8,9 +8,9 @@ interface ArticleContentProps {
 
 const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
   return (
-    <div className="article">
-      <h1 className="article-title">{article?.title}</h1>
-      <div className="text-[#666] mb-2.5 flex items-center">
+    <div className="w-full block justify-items-center">
+      <h1 className="font-bold text-2xl mb-5 text-white">{article?.title}</h1>
+      <div className="text-[#dfdfdf] mb-2.5 flex items-center">
         {article?.date && (
           <span className="mr-3">
             {format(new Date(article.date), 'MMMM dd, yyyy')}
@@ -19,7 +19,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
         {article?.tags && article.tags.length > 0 && (
           <div className="flex flex-wrap">
             {article.tags.map(tag => (
-              <span key={tag} className="bg-[#f0f0f0] p-2 rounded mr-2 text-xl">
+              <span key={tag} className="bg-[#353434] p-1 rounded mr-2 text-xs">
                 {tag}
               </span>
             ))}
@@ -27,7 +27,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
         )}
       </div>
       <div 
-        className="leading-[1.7]"
+        className="leading-[1.7] prose prose-lg prose-headings:text-white max-w-4xl prose-code:text-blue-400 prose-blockquote:text-gray-200 prose-a:text-blue-500 text-white"
         dangerouslySetInnerHTML={{ __html: article?.content || "" }}
       />
     </div>

@@ -15,8 +15,7 @@ const HomePage: React.FC = () => {
   })
   return (
     <div className="home-page">
-      <h1>Welcome to My Blog</h1>
-      <p>Read my latest articles below:</p>
+      <h1 className='text-xl'>Latest articles</h1>
       <ArticleList articles={articles} />
     </div>
   );
