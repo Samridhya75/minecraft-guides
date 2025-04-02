@@ -40,8 +40,7 @@ const ArticlePage: React.FC = () => {
     }
 
     return (
-        <div>
-            <Link to="/" className='mb-7 text-gray-300 block'>← Back to all articles</Link>
+        <div className=''>
             <ArticleContent article={article} />
         </div>
     )

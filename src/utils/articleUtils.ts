@@ -16,8 +16,6 @@ function processMarkdown(content: string, slug: string): Article {
     };
 }
 
-
-
 export async function getAllArticles(): Promise<Article[]> {
 
     const articleModules = import.meta.glob<string>('../../content/articles/*.md',
