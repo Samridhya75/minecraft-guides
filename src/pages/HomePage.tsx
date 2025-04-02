@@ -1,6 +1,6 @@
 import React,{ useEffect, useState } from 'react';
 import ArticleList from '../components/ArticleList';
-import { getAllArticles } from '../utils/articleUtils';
+import { getRecentArticles } from '../utils/articleUtils';
 import { Article } from '../utils/types';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
   
   useEffect(()=>{
     const articleCalls = async() =>{
-        const articleBlob = await getAllArticles();
+        const articleBlob = await getRecentArticles();
         setArticles(articleBlob);
     };
     articleCalls();
@@ -28,36 +28,50 @@ const HomePage: React.FC = () => {
             <Link to="/articles" className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 mr-4">
               Explore Articles
             </Link>
-            <Link to="/servers" className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-md border border-white transition duration-300">
-              Find Servers
-            </Link>
           </div>
         </div>
       </section>
       
       {/* Featured Articles Section */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Featured Articles</h2>
-            <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-              Dive into our most popular guides, tutorials, and Minecraft content
-            </p>
+            <h2 className="text-3xl font-[Minecraft] text-white">Featured Articles</h2>
           </div>
           
           <ArticleList articles={articles} />
-          
-          <div className="text-center mt-12">
-            <Link 
-              to="/articles" 
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700"
-            >
-              View All Articles
-              <svg className="ml-2 -mr-1 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
+        </div>
+      </section>
+
+      <section className='py-8 bg-gray-900'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+          <div className='text-center mb-12'>
+            <h2 className='text-3xl font-[Minecraft] text-white'>Categories</h2>
+          </div>
+
+          <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-2.5'>
+            <Link to="/categories" className='flex border rounded-lg items-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white '>
+              <img src="/java.png" alt="java logo" className='w-16 h-16 mx-5' />
+              Java
+            </Link>
+            <Link to="/categories" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
+              <img src="/bedrock.png" alt="" className='w-16 h-16 mx-5' />
+              Bedrock
+            </Link>
+            <Link to="/categories" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
+              <img src="/server.png" alt="" className='w-16 h-16 mx-5' />
+              Servers
+            </Link>
+            <Link to="/categories" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
+              <img src="/fabricmc.png" alt="" className='w-16 h-16 mx-5' />
+              Mods
+            </Link>
+            <Link to="/categories" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
+              <img src="/papermc.webp" alt="" className='w-16 h-16 mx-5' />
+              Plugins
             </Link>
           </div>
+
         </div>
       </section>
     </div>

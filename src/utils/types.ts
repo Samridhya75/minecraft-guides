@@ -6,4 +6,5 @@ export interface Article{
     excerpt: string;
     date: string;
     tags: string[];
+    imageUrl: string;
 }
