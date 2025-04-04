@@ -50,23 +50,23 @@ const HomePage: React.FC = () => {
           </div>
 
           <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-2.5'>
-            <Link to="/categories" className='flex border rounded-lg items-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white '>
+            <Link to={`/categories/java`} className='flex border rounded-lg items-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white '>
               <img src="/java.png" alt="java logo" className='w-16 h-16 mx-5' />
               Java
             </Link>
-            <Link to="/categories" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
+            <Link to="/categories/bedrock" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
               <img src="/bedrock.png" alt="" className='w-16 h-16 mx-5' />
               Bedrock
             </Link>
-            <Link to="/categories" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
+            <Link to="/categories/server" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
               <img src="/server.png" alt="" className='w-16 h-16 mx-5' />
               Servers
             </Link>
-            <Link to="/categories" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
+            <Link to="/categories/mods" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
               <img src="/fabricmc.png" alt="" className='w-16 h-16 mx-5' />
               Mods
             </Link>
-            <Link to="/categories" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
+            <Link to="/categories/plugins" className='flex border rounded-lg items-center text-center py-5 text-3xl font-[Minecraft] bg-[#2e3347] text-white'>
               <img src="/papermc.webp" alt="" className='w-16 h-16 mx-5' />
               Plugins
             </Link>

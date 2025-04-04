@@ -2,8 +2,9 @@
 id: forge01
 title: How to create a Old forge (1.7-1.16.5) server for a specific release or version
 date: '2025-03-24'
-tags: ['minecraft','mods','forge']
+tags: ['minecraft','mods','forge','server']
 excerpt: In this article, We will show you how to create a forge server for a specific forge release or version..
+imageUrl: '/forgemc.png'
 ---
 ---
 

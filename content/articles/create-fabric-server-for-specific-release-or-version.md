@@ -2,8 +2,9 @@
 id: fabric01
 title: How to create a Fabric server for a specific release or version
 date: '2025-03-25'
-tags: ['minecraft','mods','fabric']
+tags: ['minecraft','mods','fabric','server']
 excerpt: In this article, We will show you how to create a fabric server for a specific fabric release or version..
+imageUrl: '/fabricmc.png'
 ---
 ---
 

@@ -16,7 +16,7 @@ const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
                     <div className="text-[#dfdede] mb-2.5 flex items-center">
                         {article.date && (
                             <span className="mt-4">
-                                {format(new Date(article.date), 'MMMM dd, yyyy')}
+                                {format(new Date(article.date), 'dd MMMM, yyyy')}
                             </span>
                         )}
                     </div>

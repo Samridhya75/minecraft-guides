@@ -8,3 +8,13 @@ export interface Article{
     tags: string[];
     imageUrl: string;
 }
+
+export enum MinecraftCategory{
+    JAVA = "java",
+    BEDROCK = "bedrock",
+    SERVER = "server",
+    MODS = "mods",
+    PLUGINS = "plugins",
+}
+
+export const ALL_CATEGORIES = Object.values(MinecraftCategory);

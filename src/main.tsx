@@ -5,6 +5,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import React from 'react';
 import { Layout } from './Layout.tsx';
 import HomePage from './pages/HomePage.tsx';
+import CategoryPage from './pages/CategoryPage.tsx';
 
 const root = document.getElementById("root");
 
@@ -13,6 +14,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout />} >
       <Route path='' element={<HomePage />} />
       <Route path='/articles/:slug' element={<ArticlePage />} />
+      <Route path='/categories/:category' element={<CategoryPage />} />
     </Route>
   )
 );
