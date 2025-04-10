@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { getAllArticles, getArticlesByTags } from '../utils/articleUtils';
 import { Article, ALL_CATEGORIES } from '../utils/types';
+import { format } from 'date-fns';
 
 const ArticleCategoryPage: React.FC = () => {
   const { category } = useParams<{ category: string }>();
@@ -49,11 +50,11 @@ const ArticleCategoryPage: React.FC = () => {
   }, [category]);
 
   return (
-    <div className="container mx-auto px-4 py-6 md:py-8 bg-gray-900">
+    <div className="mx-auto px-4 py-6 md:py-8 bg-gray-900">
       <div className="flex justify-between items-center mb-6">
         {/* Mobile category selector toggle */}
         <button 
-          className="md:hidden bg-gray-500 px-4 py-2 rounded-md"
+          className="md:hidden bg-gray-500 px-4 py-2 rounded-md text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? 'Hide Categories' : 'Show Categories'}
@@ -75,7 +76,7 @@ const ArticleCategoryPage: React.FC = () => {
           {/* Current category display for mobile */}
           <div className="md:hidden mb-4">
             <span className="text-white">Category:</span>
-            <span className="ml-2 font-medium">{formatCategoryName(category || '')}</span>
+            <span className="ml-2 font-medium text-white">{formatCategoryName(category || '')}</span>
           </div>
           
           {loading ? (
@@ -151,7 +152,7 @@ const ArticleCard: React.FC<{ article: Article }> = ({ article }) => {
             {article.title}
         </h3>
         <p className="text-xs md:text-sm text-gray-300 mb-2">
-          {new Date(article.date).toLocaleDateString()}
+          {format(new Date(article.date), 'dd MMMM, yyyy')}
         </p>
         <p className="text-white text-xs md:text-sm mb-3 line-clamp-3 flex-grow">
           {article.excerpt}

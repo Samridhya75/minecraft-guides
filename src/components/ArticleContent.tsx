@@ -27,7 +27,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({ article }) => {
         )}
       </div>
       <div 
-        className="leading-[1.7] px-5 prose sm:prose-lg max-w-4xl prose-headings:text-white prose-code:text-blue-400 prose-a:text-blue-500 mb-10 text-white prose-blockquote:text-white"
+        className="leading-[1.7] px-5 prose sm:prose-lg lg:max-w-4xl prose-headings:text-white prose-strong:text-white prose-code:text-blue-400 prose-a:text-blue-500 mb-10 text-white prose-blockquote:text-white max-w-screen lg:prose-img:max-w-3xl"
         dangerouslySetInnerHTML={{ __html: article?.content || "" }}
       />
     </div>
