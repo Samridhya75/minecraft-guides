@@ -25,7 +25,7 @@ const HomePage: React.FC = () => {
           <h1 className="text-5xl md:text-7xl font-[Minecraft] text-white mb-4 drop-shadow-lg">Nemesis Minecraft</h1>
           <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto font-[Minecraft]">Your ultimate resource for all things Minecraft - from tutorials and mods to servers and community builds</p>
           <div className="mt-8">
-            <Link to="/categories/java" className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 mr-4">
+            <Link to="/articles" className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 mr-4">
               Explore Articles
             </Link>
           </div>
