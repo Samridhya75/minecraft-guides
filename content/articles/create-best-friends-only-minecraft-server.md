@@ -2,8 +2,8 @@
 id: paper01
 title: How to create a Friends only Minecraft server using Paper and plugins.
 date: '2025-04-04'
-tags: ['minecraft','plugins','paper','server','java']
-excerpt: In this article, We will show you how to create a friends only minecraft server using Paper and best plugins in the market..
+tags: ['plugins','paper','server','java']
+excerpt: Find out how to create a friends only minecraft server using Paper and plugins.
 imageUrl: '/papermc.webp'
 ---
 ---

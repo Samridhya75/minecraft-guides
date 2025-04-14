@@ -2,8 +2,8 @@
 id: minecraft01
 title: How to add a resource pack in a Java or Bedrock server
 date: '2025-04-10'
-tags: ['minecraft','java','server','bedrock']
-excerpt: In this article, we will show you how to add a resource pack to a Java or Bedrock server...
+tags: ['java','server','bedrock']
+excerpt: Find out how to add a resource pack to a Java or Bedrock server.
 imageUrl: '/minecraft.webp'
 ---
 ---

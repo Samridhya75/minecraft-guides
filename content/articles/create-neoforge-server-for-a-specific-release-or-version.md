@@ -2,8 +2,8 @@
 id: neoforge01
 title: How to create a Neoforge server for a specific release or version
 date: '2025-03-24'
-tags: ['minecraft','mods','neoforge','server']
-excerpt: In this article, We will show you how to create a Neoforge server for a specific Neoforge release or version..
+tags: ['mods','neoforge','server']
+excerpt: Tutorial on how to create a Neoforge server for a specific Neoforge release or version..
 imageUrl: '/neoforge.png'
 ---
 ---

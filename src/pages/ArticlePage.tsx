@@ -32,9 +32,9 @@ const ArticlePage: React.FC = () => {
 
     if(error || !article){
         return(
-            <div className='error-page'>
-                <h2>{error || "Article not Found"}</h2>
-                <Link to="/">Back to Home</Link>
+            <div className='w-full text-center bg-gray-900 text-white h-screen'>
+                <h2 className='text-3xl pt-10'>{error || "Article not Found"}</h2>
+                <Link to="/" className='pt-10 text-xl block text-blue-200'>← Back to Home</Link>
             </div>
         )
     }

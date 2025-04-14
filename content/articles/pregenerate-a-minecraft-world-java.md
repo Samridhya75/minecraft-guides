@@ -2,8 +2,8 @@
 id: server01
 title: How to pregenerate a Java minecraft world
 date: '2025-04-08'
-tags: ['minecraft','java','server']
-excerpt: In this article, we will show you how to pregenerate a Minecraft Java world for a server..
+tags: ['java','server']
+excerpt: Tutorial on how to pregenerate a Minecraft Java world for a server..
 imageUrl: '/minecraft.webp'
 ---
 ---

@@ -2,8 +2,8 @@
 id: minecraft02
 title: How to add an Addon in a Bedrock server
 date: '2025-04-10'
-tags: ['minecraft','server','bedrock']
-excerpt: In this article, we will show you how to add an addon to a Bedrock server...
+tags: ['server','bedrock']
+excerpt: Find out how to add an addon to a Bedrock server.
 imageUrl: '/minecraft.webp'
 ---
 ---

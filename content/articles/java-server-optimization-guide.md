@@ -2,8 +2,8 @@
 id: java01
 title: Optimization guide for Minecraft Java servers 2025
 date: '2025-04-10'
-tags: ['minecraft','java','server']
-excerpt: In this article, we will show you how to optimize your Java server for high player counts and reducing lag in general..
+tags: ['java','server']
+excerpt: Tips and tricks on how to optimize your Java server for high player counts and reducing lag in general.
 imageUrl: '/wrench.png'
 ---
 ---
